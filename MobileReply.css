@@ -1,0 +1,94 @@
+/*중앙정렬*/
+body{
+    width: 480px;
+    margin: 0 auto;
+}
+/**/
+
+/*임의의 기사내용*/
+.contents{
+    background: rgba(0, 0, 0, 0.815);
+    color: whitesmoke;
+   
+    padding: 20px;
+}
+/**/
+
+
+/*댓글부분*/
+.comment{
+    
+    margin-top: 50px;
+   
+}
+/**/
+
+
+/*로그인버튼*/
+.w_btn{
+    
+    margin: 10px 13px 17px 13px;
+    padding: 8px 10px;
+    border: 1px solid #b7b7b7;
+    font-size: 13px;
+    color: #666;
+    line-height: 18px;
+}
+/**/
+
+/*로그인시 입력창으로바뀜*/
+.w_btn_ok{
+    display: none;
+    margin: 10px 13px 17px 13px;
+    padding: 8px 10px;
+    border: 1px solid #b7b7b7;
+    font-size: 13px;
+    color: #666;
+    line-height: 18px;
+}
+.w_input{
+    border : 0px;
+    width: 100%;
+}
+.w_input:focus{
+    outline: none;
+}
+
+/**/
+
+/*로그인 모달*/
+.login_modal{
+    display: none;
+    margin-left: 80px;
+    width: 300px;
+    border: 1px solid #888;
+    border-radius: 3px;
+    
+   
+}
+
+#custom-login-btn{
+    padding: 15px 10px;
+}
+
+
+/*리플아이콘꾸미기*/
+.Reple{
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    color: #fff;
+    font-size: 11px;
+    background-color: #f31a0a;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+.submit_btn{
+    float: right;
+    margin: 15px -10px 0 0;
+    
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="MobileReply.css" type="text/css">
+    <!--JS-->
+    <script src="MobileReply.js"></script>
+
+    <title>News</title>
+</head>
+<body>
+   <div class="login_session"></div>
+   <div class="head">
+       <h1>댓글 화면 구현</h1>
+   </div>
+
+   <div class="contents">
+       <article> 해당 기사내용은 볼 수 없습니다.</article>
+
+   </div>
+
+
+   <!--댓글화면-->
+    <div class="comment">
+       <!--로그인 모달-->
+       <div class="login_modal">
+        
+         <a id="custom-login-btn" href="javascript:loginWithKakao()">
+           <img src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg" width="242"/>
+         </a>
+
+         <a onclick="CloseModal()"> 닫기 </a>         
+       </div>
+      
+
+
+         
+
+        <div class="back_cmt">
+         
+         <div style="font-weight: bold;"> 댓글</div>
+         <div class="w_btn" id="login_btn"> 
+           <span>로그인 해주세요</span>
+         </div>
+
+         <!--로그인을 하면 댓글을 작성할 수 있다.-->
+         <div class="w_btn_ok"> 
+            <input id="cmt_context" class="w_input" type="text" placeholder="댓글을 작성하고 ENTER키를 누르세요" onkeyup="save()">
+            
+          </div>
+       
+         
+
+        
+         <div class="cmt_row">
+            <p class='inform'>
+                <span class="Reple">리플</span> <span class="user">홍길동</span>
+                <span class='del_btn' id='0' onclick="del(this.id)">❌</span>&nbsp;
+                <span class='edit_btn' id='modify_0' onclick="mod(this.id)">✍</span> 
+            </p>
+            <p class='cmt'>
+                <span> 홍길동만이 이 글을 삭제,수정 가능합니다.</span> 
+                
+                <span class='Y' id='up_0' onclick='up(this.id)'>👍</span><span class='goodpoint'>0</span>    
+                <span class='N' id='down_0' onclick='down(this.id)'>👎</span><span class='badpoint'>0</span>
+            </p>
+            
+             <hr>       
+          </div>
+
+           
+
+        
+        </div>
+
+        
+    </div> 
+    
+
+ 
+
+
+
+</body>
+</html>
+
